@@ -1,0 +1,153 @@
+{
+    "dataset-acronym": "IC-UNED-RC-ES",
+    "dataset-name": "IC-UNED Spanish Reading Comprehension",
+    "dataset-desc-es": "Corpus de las tareas de comprensión lectora contenidas en los exámenes creados por el Instituto Cervantes para la evaluación de estudiantes de español en diferentes niveles",
+    "dataset-desc-en": "Corpus of the reading comprehension tasks contained in the exams created by the Cervantes Institute for the evaluation of Spanish students at different levels",
+    "dataset-license": "CC BY-NC-SA 4.0",
+    "dataset-owners": "Instituto Cervantes (IC), Universidad Nacional de Educación a Distancia (UNED)",
+    "agreement": "CONVENIO ENTRE EL INSTITUTO CERVANTES Y LA UNIVERSIDAD NACIONAL DE EDUCACIÓN A DISTANCIA PARA LA APLICACIÓN DEL «PROYECTO DE CREACIÓN DE UN CORPUS DIGITALIZADO DE TAREAS DE COMPRENSIÓN DE LECTURA PARA LA EVALUACIÓN DE LA COMPRENSIÓN EN SISTEMAS DE INTELIGENCIA ARTIFICIAL»",
+    "agreement-date": "25-05-2021",
+    "funding": "DeepInfo Project (AEI PID2021-127777OB-C22), UNED, Spain",
+    "contact": "anselmo@lsi.uned.es",
+    "exams": [
+        {
+        	"level": "A1",
+            "examId": "A1_2020-07-01",
+            "exercises": [
+                {
+                    "exerciseID": "A1_2020-07-01_E1",
+                    "type": "multiple-choice",
+                    "instructions": "Usted va a leer un correo electrónico de Luisa a su amigo Javier. A continuación, tiene que leer las preguntas (de la 1 a la 5) y seleccionar la opción correcta (A, Β, ο C).\nTiene que marcar la opción elegida en la Hoja de respuestas.\n",
+                    "num-questions": 5,
+                    "exercise": {
+                        "text": "email para: Javier123@gmail.com\nAsunto: Saludos\nHola, Javier:\n¿Qué tal? A ver si esta semana salimos y tomamos algo. Juan y yo vamos a jugar al tenis el miércoles a las cinco y luego al cine. ¿Quieres venir?\nAh, estoy muy contenta porque este año en la universidad puedo aprender chino por la tarde. Son dos días a la semana, de cinco a siete. Para mi es perfecto; es que por la mañana tengo que ir a trabajar al restaurante de mis tíos.\nOye, quiero alquilar una habitación de mi casa a una estudiante, ¿conoces a alguien? La habitación es grande, con todo nuevo: la cama, el armario, la mesa....\nOtra cosa: el próximo mes es el cumpleaños de mi hermano y no sé qué comprarle. Quiero\nir a tu tienda y comprarle algo de ropa: unos pantalones, una camisa... Si no le gustan, puede cambiarlos, ¿verdad?\nBueno, te dejo que voy a dar un paseo con el perro. Esta noche no quiero cocinar. Voy a Ilamar luego al restaurante chino donde vamos siempre para pedir allí la cena.\nNos vemos.\nLuisa",
+                        "image-path": "",
+                        
+                        "questions": [
+                            {
+                                "questionId": "A1_2020-07-01_E1_Q1",
+                                "text": "Luisa le dice a Javier que esta semana va a…",
+                                "image-path": "",
+                                
+                                "correct-option": "B",
+                                "options": [
+                                    {
+                                        "optionId": "A",
+                                        "text": "tomar algo con Juan.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "B",
+                                        "text": "hacer deporte con un amigo.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "C",
+                                        "text": "ver una película a las cinco.",
+                                        "image-path": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "questionId": "A1_2020-07-01_E1_Q2",
+                                "text": "En el texto se dice que Luisa…",
+                                "image-path": "",
+                                
+                                "correct-option": "C",
+                                "options": [
+                                    {
+                                        "optionId": "A",
+                                        "text": "tiene un restaurante.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "B",
+                                        "text": "es profesora de idiomas.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "C",
+                                        "text": "va a estudiar por la tarde.",
+                                        "image-path": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "questionId": "A1_2020-07-01_E1_Q3",
+                                "text": "Luisa le dice a Javier que…",
+                                "image-path": "",
+                                
+                                "correct-option": "B",
+                                "options": [
+                                    {
+                                        "optionId": "A",
+                                        "text": "tiene un piso grande.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "B",
+                                        "text": "busca una compañera de piso.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "C",
+                                        "text": "va a comprar cosas para su piso.",
+                                        "image-path": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "questionId": "A1_2020-07-01_E1_Q4",
+                                "text": "Luisa le dice a Javier que…",
+                                "image-path": "",
+                                
+                                "correct-option": "A",
+                                "options": [
+                                    {
+                                        "optionId": "A",
+                                        "text": "va a ir a su tienda a comprar algo.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "B",
+                                        "text": "ya tiene el regalo de su hermano.",
+                                        "image-path": ""
+                                    },
+                                    {
+                                        "optionId": "C",
+                                        "text": "quiere cambiar un regalo que no le gusta.",
+                                        "image-path": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "questionId": "A1_2020-07-01_E1_Q5",
+                                "text": "¿Qué va a hacer Luisa ahora?",
+                                "image-path": "",
+                                
+                                "correct-option": "C",
+                                "options": [
+                                    {
+                                        "optionId": "A",
+                                        "text": "",
+                                        "image-path": "img/A1_2020-07-01_E1_Q5_A.jpg"
+                                    },
+                                    {
+                                        "optionId": "B",
+                                        "text": "",
+                                        "image-path": "img/A1_2020-07-01_E1_Q5_B.jpg"
+                                    },
+                                    {
+                                        "optionId": "C",
+                                        "text": "",
+                                        "image-path": "img/A1_2020-07-01_E1_Q5_C.jpg"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        ]
+}

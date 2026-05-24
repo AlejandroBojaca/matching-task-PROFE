@@ -1,0 +1,70 @@
+{
+    "dataset-acronym": "IC-UNED-RC-ES",
+    "dataset-name": "IC-UNED Spanish Reading Comprehension",
+    "dataset-desc-es": "Corpus de las tareas de comprensión lectora contenidas en los exámenes creados por el Instituto Cervantes para la evaluación de estudiantes de español en diferentes niveles",
+    "dataset-desc-en": "Corpus of the reading comprehension tasks contained in the exams created by the Cervantes Institute for the evaluation of Spanish students at different levels",
+    "dataset-license": "CC BY-NC-SA 4.0",
+    "dataset-owners": "Instituto Cervantes (IC), Universidad Nacional de Educación a Distancia (UNED)",
+    "agreement": "CONVENIO ENTRE EL INSTITUTO CERVANTES Y LA UNIVERSIDAD NACIONAL DE EDUCACIÓN A DISTANCIA PARA LA APLICACIÓN DEL «PROYECTO DE CREACIÓN DE UN CORPUS DIGITALIZADO DE TAREAS DE COMPRENSIÓN DE LECTURA PARA LA EVALUACIÓN DE LA COMPRENSIÓN EN SISTEMAS DE INTELIGENCIA ARTIFICIAL»",
+    "agreement-date": "25-05-2021",
+    "funding": "DeepInfo Project (AEI PID2021-127777OB-C22), UNED, Spain",
+    "contact": "anselmo@lsi.uned.es",
+    "exams": [
+        {
+        	"level": "B1",
+            "examId": "B1_2013-08-01",
+            "exercises": [
+                {
+                    "exerciseID": "B1_2013-08-01_E4",
+                    "type": "fill-the-gap",
+                    "instructions": "Lea el siguiente texto, del que se han extraído seis fragmentos. A continuación lea los ocho fragmentos propuestos (A-H) y decida en qué lugar del texto (19-24) hay que colocar cada uno de ellos.\nHAY DOS FRAGMENTOS QUE NO TIENE QUE ELEGIR.\nMarque las opciones elegidas en la Hoja de respuestas.",
+                    "exercise": {
+                        "text": "Tamales panameños\nEl tamal es probablemente el producto más apreciado, y sin duda el más popular, de la cocina panameña. Sin embargo, debido a la dificultad de su elaboración, a los panameños nos da bastante miedo preparar en casa nuestros propios tamales.\nPara que cualquier persona se atreva a preparar este riquísimo plato tradicional, vamos a aconsejarles sobre los ingredientes que deben utilizarse en el auténtico tamal panameño. <s id=19>. De todos modos el resultado final dependerá también de la calidad de los productos que utilice y de su mano en la cocina.\nComencemos por el componente fundamental: el grano de maíz. <s id=20>. Los tamales preparados a base de maíz nuevo se elaboran con los granos de la mazorca recién cosechada. Su preparación es más sencilla, ya que la mazorca se ralla y los granos se deshacen para formar la masa del tamal. En cambio, el maíz viejo es el grano seco, y es necesario cocinarlo hasta que esté tierno, por lo que prepararlo toma más tiempo. <s id=21>. \nOtro componente importante es el relleno: los tamales más típicos en nuestra mesa se preparan con cerdo o gallina. Probablemente lo mejor sea con gallina de patio, pero requiere una cocción larga para lograr una carne más suave. <s id=22>. \nAdemás de la carne del relleno, hay otros ingredientes que dan a los tamales panameños unas características especiales. <s id=23>. También en otros países se usan productos propios de cada región. Un ejemplo lo vemos en el sur de México, donde llevan chile y se envuelven con hojas de parra.\nPor último, quiero recordarles algo muy importante: hay que tener en cuenta que, una vez cocidos, los tamales se deben conservar en el frío. <s id=24>. En caso contrario, el maíz se comienza a descomponer y produce un sabor agrio, desagradable al paladar y nocivo para nuestra salud.",
+                        "fillings": [
+                            {
+                                "optionId": "A",
+                                "text": "En el interior del país se prefiere el tamal de maíz nuevo, mientras que en la capital es habitual el de maíz viejo.",
+                                "correct-gapId": 21
+                            },
+                            {
+                                "optionId": "B",
+                                "text": "La mezcla de cebollas, ají criollo y tomates cocida lentamente es lo que distingue nuestros tamales panameños de los del resto de América.",
+                                "correct-gapId": 23
+                            },
+                            {
+                                "optionId": "C",
+                                "text": "Estamos seguros de que, si elige los ingredientes adecuados y sigue las instrucciones de cualquier receta tradicional, obtendrá un tamal excelente.",
+                                "correct-gapId": 19
+                            },
+                            {
+                                "optionId": "D",
+                                "text": "No obstante, el esfuerzo merece la pena porque el sabor que da es mucho más intenso que el del pollo.",
+                                "correct-gapId": 22
+                            },
+                            {
+                                "optionId": "E",
+                                "text": "Por ejemplo, este ingrediente es la mejor opción para que el tamal panameño quede sabroso.",
+                                "correct-gapId": null
+                            },
+                            {
+                                "optionId": "F",
+                                "text": "Por ello, si no los vamos a consumir en los tres días siguientes, es necesario congelarlos.",
+                                "correct-gapId": 24
+                            },
+                            {
+                                "optionId": "G",
+                                "text": "Este puede ser nuevo o viejo, y el sabor del tamal será completamente diferente en cada caso.",
+                                "correct-gapId": 20
+                            },
+                            {
+                                "optionId": "H",
+                                "text": "Por lo tanto, debemos comprar el que esté más fresco para asegurarnos de que el relleno esté jugoso.",
+                                "correct-gapId": null
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        ]
+}

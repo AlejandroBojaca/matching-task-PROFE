@@ -1,0 +1,79 @@
+PROFE 2026: Language Proficiency Evaluation
+
+https://sites.google.com/view/profe2026/home
+
+
+Deep language comprehension is essential for understanding semantic nuances and logical inferences behind natural language understanding. A major challenge in language comprehension is the development of new resources, which often require significant human intervention. One solution has been to reuse human Reading Comprehension collections, such as RACE (Lai et al. 2017), allowing researchers to compare the performance of automated systems against human benchmarks. However, most of these resources have been created primarily in English and often contain a substantial amount of training data similar to the test set, which can limit the generalization of results regarding reasoning capabilities.
+
+Description of the task
+PROFE 2026 reuses the exams for Spanish proficiency evaluation developed by Instituto Cervantes along many years to evaluate human students. Therefore, automatic systems will be evaluated under the same conditions as humans were. Systems will receive a set of exercises with their corresponding instructions without specific training material. In this way we expect Transfer Learning approaches or the use of Generative Large Language Models.
+
+The previous edition proposed exams based only on text. In this new edition, we will include exams with images, which sometimes require interpretation to answer the exercise correctly. We propose evaluating systems on their ability to perform multimodal reasoning, moving beyond text-only comprehension.
+
+We will provide a limited set of new image-based exercises while retaining the dataset from the previous edition. This setup encourages participants to develop strategies for handling the scarcity of specific training data.
+
+Subtasks 
+PROFE 2026 has three subtasks, one per exercise type. Teams can participate in any combination of them. Each subtask contains several exercises of the same type. The subtasks are:
+
+Multiple choice subtask: each exercise includes a text and a set of multiple-choice questions about the text where only one answer is correct. Given a multiple-choice question, systems must select the correct answer among the candidates. 
+
+Matching subtask: each exercise contains two sets of texts. Systems must find the text in the second set that best matches the first set. There is only one possible matching per text, but the first set can contain extra unnecessary texts. 
+
+Filling the gap subtask: each exercise contains a text with several gaps corresponding to textual fragments that have been removed and presented disorderly as options. Systems must determine the correct position for each fragment. There is only one correct text per gap, but there could be more candidates than gaps.
+
+The different exercises open research on how to approach them, adapting different prompts when using generative models. 
+
+As the main novelty in this edition, some exercises will contain images. While some of these images will be the candidate answers (rather than text excerpts), others might provide visual information needed to answer the exercise correctly. Conversely, some images will not provide essential information. Consequently, systems participating in this edition must adopt a multimodal approach, capable of discerning when to integrate visual cues and when to disregard them. This necessity to filter visual relevance introduces significant new challenges compared to the previous edition.
+
+Dataset
+We will use the IC-UNED-RC-ES dataset created from real examinations at Instituto Cervantes. These exams were created by human experts to assess Spanish language proficiency. We have already collected the exams and converted them to a digital format, which is ready to use for the task. The dataset contains exams at different levels (from A1 to C2). The description of the full dataset is published in the following paper:
+
+Anselmo Peñas, Álvaro Rodrigo, Javier Fruns-Jiménez, Inés Soria-Pastor, Sergio Moreno-Álvarez, Alberto Pérez García-Plaza, and Julio Reyes-Montesinos. A Spanish Language Proficiency Dataset for AI Evaluation. Information 17, no. 2: 159. DOI: 10.3390/info17020159. 2026.
+
+
+The complete dataset contains 282 exams with 855 exercises. The total number of evaluation points is 6146 (among 16,570 options), distributed by exercise type as:
+
+multiple-choice: 3544 responses
+
+matching: 2309 responses
+
+fill-the-gap: 293 responses
+
+
+In PROFE 2026, we plan to use around 50% of the exams; the other 50% was already used for the PROFE 2025 edition.
+
+
+We intend not to distribute the gold standard to prevent overfitting in post-campaign experiments and data contamination in LLMs.
+
+Examples
+See submission section for examples on each task, input and output formats and submission procedure.
+
+Evaluation measures and baseline
+
+We will use traditional accuracy (proportion of correct answers) as the main evaluation measure. Systems will receive evaluation scores from two different perspectives:
+
+
+At the question level, where correct answers are counted individually without grouping them.
+
+At the exam level, where scores for each exam are considered. Each exam contains several exercises of different types. An exam is considered to be passed if an accuracy score (accounted as the proportion of correct answers) above 0.6 is reached. Then, the proportion of passed exams is given as a global score. This perspective will only apply to those teams participating in the three subtasks.
+
+
+More in detail, the exact evaluation per subtask is as follows:
+
+Multiple choice subtask: we will measure accuracy as the proportion of questions correctly answered
+
+Matching subtask: we will measure accuracy as the proportion of correct texts matched. 
+
+Fill in the gap subtask: We will measure accuracy as the proportion of correctly filled gaps.
+
+
+We will use accuracy as the evaluation measure because there is only one correct option among candidates and because it is the measure applied to humans doing the same exams. Thus, we can compare the performance of automatic systems and humans under the same conditions
+
+
+A preliminary baseline using ChatGPT obtains the following results for each exercise type (provided that different prompting can produce slightly different results):
+
+Multiple choice accuracy:  0.64
+
+Filling the gap accuracy:  0.43
+
+Matching accuracy:  0.51
